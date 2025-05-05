@@ -11,6 +11,8 @@ class PortfolioController extends Controller
     {
         $path = 'documents/MyCV.pdf';
 
+        dd($path);
+
         if (!Storage::exists($path)) {
             abort(404);
         }
