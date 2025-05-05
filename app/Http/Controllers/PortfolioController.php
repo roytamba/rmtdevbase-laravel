@@ -11,12 +11,12 @@ class PortfolioController extends Controller
     {
         $path = 'documents/MyCV.pdf';
 
-        dd(Storage::exists('documents/cv.pdf'));
-
         if (!Storage::exists($path)) {
             abort(404);
         }
 
+        $fullPath = Storage::path($path);
+        
         return response()->file($fullPath, [
             'Content-Type' => 'application/pdf',
         ]);
