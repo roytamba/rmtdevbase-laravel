@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
     <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="{{ asset("portfolio/css/bootstrap-icons.css") }}" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('portfolio/css/styles.css') }}" rel="stylesheet" />
 </head>
@@ -406,7 +406,7 @@
         </div>
     </footer>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset("portfolio/js/bootstrap.bundle.min.js") }}"></script>
     <!-- Core theme JS-->
     <script src="{{ asset('portfolio/js/scripts.js') }}"></script>
 </body>
